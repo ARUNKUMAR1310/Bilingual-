@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-Fav-icon_1">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="Fav-icon_1" data-name="Fav-icon – 1" clip-path="url(#clip-Fav-icon_1)">
+    <rect width="100" height="100" fill="#fff"/>
+    <g id="angular" transform="translate(2.151 -0.341)">
+      <path id="Path_374" data-name="Path 374" d="M47.9.341.849,16.9,8.284,78.541l39.664,21.8,39.869-22.1,7.432-61.64Z" fill="#b3b3b3"/>
+      <path id="Path_375" data-name="Path 375" d="M170.078,29.05,127.31,14.466v89.549l35.841-19.836,6.926-55.128Z" transform="translate(-79.522 -8.882)" fill="#a6120d"/>
+      <path id="Path_376" data-name="Path 376" d="M15.073,29.311,21.444,84.44l35.288,19.573V14.462L15.073,29.31Z" transform="translate(-8.944 -8.88)" fill="#dd1b16"/>
+      <path id="Path_377" data-name="Path 377" d="M89.8,67.646,78.029,73.151H65.62L59.788,87.741l-10.849.2,29.09-64.714L89.8,67.646Zm-1.138-2.772-10.556-20.9L69.448,64.515h8.58l10.635.36Z" transform="translate(-30.24 -14.391)" fill="#f2f2f2"/>
+      <path id="Path_378" data-name="Path 378" d="M127.309,23.226l.078,20.75,9.825,20.555h-9.881l-.022,8.607,13.663.013,6.386,14.792,10.381.192L127.309,23.226Z" transform="translate(-79.521 -14.391)" fill="#b3b3b3"/>
+    </g>
+  </g>
+</svg>
