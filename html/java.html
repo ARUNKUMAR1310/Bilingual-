@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>factory</title>
+  <link rel="stylesheet" href="D:\workspace\html\assets\css\style.css">
+  <link rel="stylesheet" href="D:\workspace\html\assets\css\bootstrap.min.css">
+  <link rel="icon" href="D:\workspace\html\assets\img\LOGO.png">
+</head>
+
+<body>
+        
+        <label>sno</label><br>
+        <input type="number" id="sno" placeholder="enter the sno"><br><br>
+
+        <label>company</label><br>
+        <input type="text" id="company" placeholder="enter the company"><br><br>
+        
+        <label>model</label><br>
+        <input type="text" id="model" placeholder="enter the model"><br><br>
+       
+        <label>varient</label><br>
+        <input type="text" id="varient" placeholder="enter the varient"><br><br>
+       
+        <label>colour</label><br>
+        <input type="text" id="colour" placeholder="enter the colour"><br><br>
+
+        <label>price</label><br>
+        <input type="text" id="price" placeholder="enter the price"><br><br>
+
+        <button type="button" id="savebutton" class="btn btn-primary" onclick="add()" class="btn btn-secondary">
+          save
+        </button>
+        <button type="button" class="btn btn-warning" onclick="clearfields()">
+          Reset
+        </button>
+      </div>
+      <div class ="col">
+        <input type="text" id ="searchText">
+        <button class="btn btn-primary"  onclick="search()">search</button>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>sno</th>
+              <th>company</th>
+              <th>model</th>
+              <th>varient</th>
+              <th>colour</th>
+              <th>price</th>
+            </tr>
+          </thead>
+          <tbody id="content">
+            <tr>
+            <td col span="5">no data </td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+      </div>
+  </div>
+
+  <script src="D:\workspace\html\assets\js\bootstrap.min.js"></script>
+  <script src="D:\workspace\html\assets\js\popper.min.js"></script>
+  <script src="D:\workspace\html\assets\js\index.js"></script>
+</body>
+</html>

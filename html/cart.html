@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart</title>
+    <link rel="stylesheet" href="..\assets\css\style.css">
+    <link rel="stylesheet" href="..\assets\css\bootstrap.min.css">
+    <link rel="icon" href="..\assets\img\logoo.jpeg">
+</head>
+
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="BikeWorld">BikeWorld</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"></li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="product.html"
+                >Product</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="shop.html">shop</a>
+            </li>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control-me-2"
+                type="search"
+                placeholder="search"
+                aria-label="search"
+              />
+              <button class="btn btn-primary" type="sumbit">search</button>
+            </form>
+          </ul>
+
+          <a class="nav-link active" href="cart.html" target="blank"
+            >Cart 
+            <span id="itemsCount">(0) </span></a
+          >
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--table-->
+    
+    <div class="row">
+      <div class="col-lg-25">
+        <div class="container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>sno</th>
+                <th>company</th>
+                <th>URL</th>
+                <th>varient</th>
+                <th style="width: 15%">Quantity</th>
+                <th>Price</th>
+                <th>Tax</th>
+                <th>CartAmount</th>
+                <th>TotalPrice</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="engine"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="float-end">
+      <button class="btn btn-warning"type="button">
+        <a href="shop.html">Back to Shopping</a>
+      </button>
+      <button class="btn btn-info" type="button">
+        <a href="ord.html">Checkout</a>
+      </button>
+      <button class="btn btn-danger" type="button" onclick="removeFromCart()">Remove All
+      </button>
+    </div>
+ </body>
+
+
+ <script src="..\assets\js\jquery-3.7.1.min.js"></script>
+ <!-- <script src="..\assets\js\product.js"></script>
+ <script src="..\assets\js\shop.js"></script> -->
+ <script src="..\assets\js\cart.js"></script>
+
+
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-js">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="js" clip-path="url(#clip-js)">
+    <rect width="100" height="100" fill="#fff"/>
+    <g id="javascript-1" transform="translate(6)">
+      <path id="Path_97" data-name="Path 97" d="M7.449,89.657,0,0,88.955.18,81.079,89.657,44.813,100Z" fill="#e9ca32"/>
+      <path id="Path_98" data-name="Path 98" d="M62.468,94.624V12.085L99.1,12.2,92.568,86.052Z" transform="translate(-17.655 -3.415)" fill="#ffde25"/>
+      <g id="Group_8" data-name="Group 8" transform="translate(14.706 17.12)">
+        <path id="Path_99" data-name="Path 99" d="M46.684,26H37V81.956l-7.532-1.435V72.988L20.5,71.554V88.412l26.184,6.815Zm7.265,0H80.76L78.966,36.725H64.184v17.6H78.966L77.173,89.847l-23.224,5.38V84.108l15.691-5.38.906-14.706-16.6,2.4Z" transform="translate(-20.5 -26)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

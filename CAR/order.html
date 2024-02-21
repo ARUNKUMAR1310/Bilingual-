@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+.container {
+    position: relative;
+}
+
+.logout-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Hover effect for the button */
+.logout-button:hover {
+    background-color: #cc0000;
+}
+</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order</title>
+    <link rel="stylesheet" href="..\assets\css\style.css">
+    <link rel="stylesheet" href="..\assets\css\bootstrap.min.css">
+</head>
+
+<body>
+
+ <!---header Navbar-->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">   
+    <div class="container-fluid">
+       <a class="navbar-brand" href="carPalace">carPalace</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+           aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+               <li class="nav-item">
+                   <a class="nav-link" aria-current="page" href="page.html">page</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="factory.html">factory</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" aria-current="page" href="showroom.html">showroom</a>
+               </li>
+               <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="companyCarts.html">companyCarts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="login.html">login</a>
+          </li>
+           </ul>
+           </span>
+           </a> 
+        </div>
+   </div>
+</nav>
+
+<div class="row">
+    <div class="col">
+      <div class="container">
+        <div class="py-4">
+          <h3>CHECKOUT</h3>
+          <div class="row pt-4">
+            <div class="col-lg-6">
+              <div class="card">
+                <h5 class="card-header">BILL TO</h5>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="order-info">
+                      <strong>OrderId:</strong> <span id="orderIdDisplay"></span>
+                  </div>
+
+                    <div class="col-lg-6 p-2">
+                      <input type="text" id="cuName" class="form-control" placeholder="Customer Name" />
+                    </div>
+                    <div class="col-lg-6 p-2">
+                      <input type="number" id="mb" class="form-control" placeholder="Mobile Number" />
+                    </div>
+                    <div class="col-lg-6 p-2">
+                      <input type="text" id="addre" class="form-control" placeholder="Street" />
+                    </div>
+                    <div class="col-lg-6 p-2">
+                      <input type="text" id="city" class="form-control" placeholder="City" />
+                    </div>
+                    <div class="col-lg-6 p-2">
+                      <input type="text" id="state" class="form-control" placeholder="State" />
+                    </div>
+                    <div class="col-lg-6 p-2">
+                      <input type="text" id="pincode" class="form-control" placeholder="Pincode" />
+                    </div>
+
+                  </div>
+
+                </div>
+              
+            </div>
+            <div class="col-lg-6 mt-2">
+              <div class="card">
+                <h5 class="card-header">PRICE DETAIL</h5>
+                <table class="table">
+                  <tr>
+                    <th>TOTAL AMOUNT</th>
+                    <td id="totalCartAmount">&#8377;</td>
+                  </tr>
+                  <tr>
+                    <th>TAX</th>
+                    <td id="tax">&#8377;</td>
+                  </tr>
+                  <tr>
+                    <th>TOTAL</th>
+                    <td id="totalPrice">&#8377;</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            </div>
+          <div class="float-end mt-2">
+            <a href="showroom.html" class="btn btn-secondary">
+              BACK TO SHOPPING
+          </a>
+            
+            <button class="btn btn-primary" onclick="final()">
+           PLACE ORDER
+            </button>
+            
+          </div>
+
+        </div>
+
+      </div>
+  
+      
+ 
+      <script src="D:\workspace\html\assets\js\jquery-3.7.1.min.js"></script>
+
+      <script src="D:\workspace\html\assets\js\bootstrap.min.js"></script>
+      <script src="D:\workspace\html\assets\js\popper.min.js"></script>
+      <script src="D:\workspace\html\assets\js\cart.js"></script>
+      <script src="D:\workspace\html\assets\js\ord.js"></script>     
+
+</body>
+
+</html>

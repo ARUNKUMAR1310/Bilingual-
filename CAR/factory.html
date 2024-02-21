@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<HTML>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Factory</title>
+    <link rel="stylesheet" href="..\assets\css\style.css">
+    <link rel="stylesheet" href="..\assets\css\bootstrap.min.css">
+    <link rel="icon" href="..\assets\img\logoo.jpeg">
+</head>
+
+<body>
+
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+  <a class="navbar-brand" href="Carpalace">Carpalace</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="page.html">page</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="factory.html">factory</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="showroom.html">showroom</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col">
+                <div> Total Cars: <span id="totalCars">0 </span> </div>
+            </div>
+            <div class="col">
+                <input type="text" id="searchText">
+        <button class="btn btn-primary" onclick="search()">search</button>
+            </div>
+            
+            <div class="col">
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Add cars
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Super cars</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+        <label>company</label><br>
+        <input type="text" id="company" placeholder="enter the company" style="width: 250px; text-align: left;"><br>
+        <p style="display:none; color:aqua;" id="productCompanyErrMsg">please enter the product company</p>
+
+        <label>modelno</label><br>
+        <input type="text" id="modelno" placeholder="enter the modelno" style="width: 250px; text-align: left;"><br>
+        <p style="display:none; color:aqua;" id="productModelNoErrMsg">please enter the product modelno</p>
+
+
+        <label>varient</label><br>
+        <input type="text" id="varient" placeholder="enter the varient" style="width: 250px; text-align: left;" ><br>
+        <p style="display:none; color:aqua;" id="productVarientErrMsg">please enter the product varient</p>
+
+
+        <label>colour</label><br>
+        <input type="text" id="colour" placeholder="enter the colour" style="width: 250px; text-align: left;"><br>
+        <p style="display:none; color:aqua;" id="productColorErrMsg">please enter the product  color</p>
+
+
+        <label>price</label><br>
+        <input type="text" id="price" placeholder="enter the price" style="width: 250px; text-align: left;"><br>
+        <p style="display:none; color:aqua;" id="productPriceErrMsg">please enter the product price</p>
+
+
+        <label>url</label><br>
+        <input type="url" id="url" placeholder="enter the url" style="width: 250px; text-align: left;"><br>
+        <p style="display:none; color:aqua;" id="productUrlErrMsg">please enter the product url</p>
+
+        
+
+        <button type="button"  class="btn btn-primary" id="savebutton" onclick="auto()" class="btn btn-secondary">
+            save
+        </button>
+        <button type="button" class="btn btn-warning" onclick="clearfields()">
+            reset
+        </button>
+    </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!---table-->
+
+    <div class ="col">
+   
+        <table class="table">
+          <thead>
+            <tr>
+              <th>company</th>
+              <th>modelno</th>
+              <th>varient</th>
+              <th>colour</th>
+              <th>price</th>
+              <th>url</th>
+              <th>action</th>
+            </tr>
+          </thead>
+          <tbody id="content">
+            <tr>
+            <td col span="7">no data </td>
+          </tr>
+        </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+   
+  <script src="..\assets\js\jquery-3.7.1.min.js"></script>
+  <script src="..\assets\js\bootstrap.min.js"></script>
+  <script src="..\assets\js\popper.min.js"></script>
+  <script src="..\assets\js\factory.js"></script>
+  </body>
+
+</html>
