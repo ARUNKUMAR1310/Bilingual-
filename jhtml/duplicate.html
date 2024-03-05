@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duplicate</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .constant {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: grey;
+      }
+      .input-constant {
+        margin: 20px;
+      }
+      .input-constant input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+      }
+      .result-constant {
+        margin-top: 20px;
+      }
+      .result-constant p {
+        margin: 5px 0;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="constant">
+      <div class="input-constant">
+        <h2>find duplicate value</h2>
+        <label>Enter the value:</label><br /><br />
+        <input
+          type="text"
+          id="duplicates"
+          placeholder="e.g., 1, 2, 3, 4, 1,bmw,audi"
+        />
+        <br /><br />
+
+        <button class="btn btn-danger" onclick="dupValue()">
+          Find Duplicates</button
+        ><br /><br />
+      </div>
+      <div class="result-constant">
+        <p id="results"></p>
+      </div>
+    </div>
+    <script src="../jasc/duplicate.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Positive</title>
+   
+  </head>
+ 
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positive/Negative Integer Checker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .conts {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: grey;
+      }
+      .input-conts {
+        margin-bottom: 20px;
+      }
+      .input-conts input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .result-conts {
+        margin-top: 20px;
+      }
+      .result-conts p {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conts">
+      <h2>Positive/Negative Integer Checker</h2>
+      <div class="input-conts">
+        <label>Enter the value</label>
+        <input type="number" id="num" placeholder="eg 1,2,3,4,-5,-6,-7,-8" />
+      </div>
+      <button class="btn btn-danger" onclick="check()">Check</button>
+      <div class="result-conts">
+        <p id="results"></p>
+      </div>
+    </div>
+
+    <script src="../jasc/positive.js"></script>
+  </body>
+</html>

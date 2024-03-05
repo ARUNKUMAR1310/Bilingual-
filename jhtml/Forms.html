@@ -1,0 +1,224 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div>TotalStudents : <span id="totalStudents">0</span></div>
+      <br />
+      <div class="row">
+        <div class="col-3">
+          <h1>Students form</h1>
+          <label>First Name</label><br />
+          <input type="Text" id="fName" placeholder="Enter the first Name" />
+          <br />
+          <label>Last Name</label><br />
+          <input type="Text" id="lName" placeholder="Enter the last Name" />
+          <br />
+
+          <label>DOB</label><br />
+          <input type="date" id="dob" placeholder="Enter the DOB" />
+          <br />
+
+          <label>Gender</label><br />
+          <input type="radio" id="gender" name="gender" value="male" />
+          <label for="gender">male</label><br />
+          <input type="radio" id="gender" name="gender" value="female" />
+          <label for="gender">female</label><br />
+          <input type="radio" id="gender" name="gender" value="others" />
+          <label for="gender">others</label><br />
+          <div>
+            <label>Skill</label><br />
+            <input type="checkbox" id="skill" value="HTML" />
+            <label for="Skill">HTML</label><br />
+            <input type="checkbox" id="skill" value="CSS" />
+            <label for="Skill">CSS</label><br />
+            <input type="checkbox" id="skill" value="BOOTSTARP" />
+            <label for="Skill">BOOTSTARP</label><br />
+            <input type="checkbox" id="skill" value="JAVASCRIPT" />
+            <label for="Skill">JAVASCRIPT</label><br />
+          </div>
+          <label>Nationality</label><br />
+          <select name="" id="nationality">
+            <option value="India">INDIA</option>
+            <option value="Japan">JAPAN</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+          </select>
+          <br /><br />
+
+          <button class="btn btn-danger" onclick="saveData()">save</button>
+          <br /><br />
+        </div>
+
+        <div class="col-9">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>DOB</th>
+                <th>Gender</th>
+                <th>Skill</th>
+                <th>Nationality</th>
+              </tr>
+            </thead>
+            <tbody id="result">
+              <tr>
+                <td colspan="6">no data found</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="D:\js\jasc\Forms.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .containers {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: grey;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      form {
+        padding: 20px;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      textarea {
+        height: 100px;
+      }
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="containers">
+      <h2>Stundents form</h2>
+      <!-- <div>TotalStudents : <span id="totalStudents">0</span></div> -->
+
+      <form id="contactForm">
+        <div class="form-group">
+          <label>First Name:</label>
+          <input type="text" id="fName" placeholder="Enter the first Name" />
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="Text" id="lName" placeholder="Enter the last Name" />
+          <br />
+        </div>
+        <div class="form-group">
+          <label>DOB</label><br />
+          <input type="date" id="dob" placeholder="Enter the DOB" />
+          <br />
+        </div>
+        <div class="form-group">
+          <label>Email</label><br />
+          <input type="text" id="email" placeholder="Enter the Email" />
+          <br />
+        </div>
+        <div class="form-group">
+          <label>Gender</label><br />
+          <input type="radio" id="gender" name="gender" value="male" />
+          <label for="gender">male</label><br />
+          <input type="radio" id="gender" name="gender" value="female" />
+          <label for="gender">female</label><br />
+          <input type="radio" id="gender" name="gender" value="others" />
+          <label for="gender">others</label><br />
+        </div>
+        <div class="form-group">
+          <label>Skill</label><br />
+          <input type="checkbox" id="skill" value="HTML" />
+          <label for="Skill">HTML</label><br />
+          <input type="checkbox" id="skill" value="CSS" />
+          <label for="Skill">CSS</label><br />
+          <input type="checkbox" id="skill" value="BOOTSTARP" />
+          <label for="Skill">BOOTSTARP</label><br />
+          <input type="checkbox" id="skill" value="JAVASCRIPT" />
+          <label for="Skill">JAVASCRIPT</label><br />
+        </div>
+        <div class="form-group">
+          <label>Nationality</label><br />
+          <select name="" id="nationality">
+            <option value="India">INDIA</option>
+            <option value="Japan">JAPAN</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+          </select>
+        </div>
+        <button class="btn btn-danger" onclick="saveData()">save</button>
+        <br /><br />      </form>
+    </div>
+  </body>
+  <script src="../jasc/Forms.js"></script>
+</html>
