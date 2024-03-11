@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-android">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="android" clip-path="url(#clip-android)">
+    <rect width="100" height="100" fill="#fff"/>
+    <g id="android-2" data-name="android" transform="translate(-27.164 -70.009)">
+      <path id="Path_24" data-name="Path 24" d="M93.909,207.092a6.265,6.265,0,0,1,6.264,6.264v26.873a6.264,6.264,0,0,1-12.529,0V213.356a6.264,6.264,0,0,1,6.264-6.264Z" transform="translate(-31.075 -76.782)" fill="#a4c639"/>
+      <path id="Path_25" data-name="Path 25" d="M69.325,133.645c-.021.238-.039.478-.039.721V175.08a7.823,7.823,0,0,0,7.768,7.906h41.4a7.823,7.823,0,0,0,7.769-7.906V134.366c0-.243-.009-.484-.029-.721Z" transform="translate(-20.792 -35.643)" fill="#a4c639"/>
+      <path id="Path_26" data-name="Path 26" d="M91.1,131.847a6.265,6.265,0,0,1,6.264,6.264v26.873a6.264,6.264,0,0,1-12.529,0V138.112a6.264,6.264,0,0,1,6.264-6.264ZM38.428,103.162a6.264,6.264,0,0,1,6.264,6.264V136.3a6.264,6.264,0,1,1-12.529,0V109.427A6.264,6.264,0,0,1,38.428,103.162Zm77.073,0a6.264,6.264,0,0,1,6.264,6.264V136.3a6.264,6.264,0,1,1-12.529,0V109.427A6.265,6.265,0,0,1,115.5,103.162Zm-66.786-6.3c.174-12.506,11.09-22.76,25.1-24.111h6.3c14.012,1.352,24.927,11.606,25.1,24.111Z" transform="translate(0 -1.537)" fill="#a4c639"/>
+      <path id="Path_27" data-name="Path 27" d="M74.743,70.009l6.608,11.446m45.533-11.446-6.608,11.446" transform="translate(-23.849)" fill="none" stroke="#a4c639" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_28" data-name="Path 28" d="M106.625,98.045a3.242,3.242,0,0,1-6.482.018v-.018a3.242,3.242,0,0,1,6.482-.018Zm24.192,0a3.242,3.242,0,0,1-6.482.018v-.018a3.242,3.242,0,0,1,6.482-.018Z" transform="translate(-38.076 -13.925)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
