@@ -1,0 +1,265 @@
+.nexlogo {
+  height: 50px;
+  width: 100%;
+}
+
+.client-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.rotating-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  text-align: start;
+  text-decoration: underline;
+  text-decoration-color: chocolate;
+}
+.rotating-text-wrapper h2 {
+  top: 0;
+  margin: 0;
+  bottom: 0;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  color: chocolate;
+}
+.rotating-text-wrapper h2:nth-child(1) {
+  animation-name: rotating-text-1;
+}
+@keyframes rotating-text-1 {
+  0% {
+    transform: translateY(200%);
+  }
+  16% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  17% {
+    opacity: 0;
+  }
+}
+.rotating-text-wrapper h2:nth-child(2) {
+  animation-name: rotating-text-2;
+}
+@keyframes rotating-text-2 {
+  17% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  33% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  34% {
+    opacity: 0;
+  }
+}
+.rotating-text-wrapper h2:nth-child(3) {
+  animation-name: rotating-text-3;
+}
+@keyframes rotating-text-3 {
+  33% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  49% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+.card-border div {
+  background-color: black;
+  background-size: auto auto auto auto;
+}
+
+/* body {
+  background-color: tan;
+  color: black;
+} */
+
+/* @media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+    color: white;
+  }
+} */
+
+@media screen and (max-width: 576px) {
+  .rotating-text-wrapper {
+    font-size: 0.7rem;
+  }
+}
+.div5 {
+  background-color: #f7f7f7;
+  display: flex;
+}
+.div5-head {
+  font-weight: 700;
+  width: 100%;
+}
+.div5-anger h1 {
+  color: rgb(224, 84, 38);
+  text-decoration-color: rgb(224, 84, 38);
+  text-decoration: underline;
+  width: 100%;
+}
+.div5-anger h1:hover {
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-anc {
+  vertical-align: middle;
+}
+.navbar-color:hover {
+  color: orange;
+  text-decoration-style: none;
+}
+.navbar-color:active {
+  text-decoration-style: none;
+}
+.navbar-color:visited {
+  text-decoration-style: none;
+}
+.navbar-color:link {
+  text-decoration-style: none;
+}
+@media screen and (min-width: 768px) {
+  .dropdown {
+    position: none;
+    display: none;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: none;
+    background-color: #f1f1f1;
+    min-width: none;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+.image-card-div:hover {
+  scale: 0.95;
+}
+
+#carouselExampleIndicators h1 {
+  font-weight: 600;
+  background-color: black;
+  color: rgb(211, 210, 210);
+}
+.carousel-inner {
+  text-align: center;
+}
+#home {
+  width: 100;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#home button {
+  border: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#home {
+  padding: 20px;
+  background-image: url("../img/mountain.webp");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+#home h1 {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#home button {
+  padding: 5px 5px;
+  padding: 2px 2px;
+  border-color: #e5e5e5;
+  border-bottom: 10px 10px 50px rgb(0, 0, 0, 0.5);
+}
+.grid-container {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto auto auto auto;
+  padding: 2px;
+  text-align: center;
+}
+
+.item1,
+.item3 {
+  margin-bottom: 80px;
+}
+
+.item2,
+.item4 {
+  margin-top: 80px;
+}
+
+.img-fluid:hover {
+  border-color: red;
+}
